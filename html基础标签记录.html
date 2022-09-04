@@ -31,6 +31,84 @@
         <span>一行多个</span>
     <!-- 6，图片标签 -->
         <img src="图片URL地址"  alt="替换文本">
-        
+            
+    <!-- 7，锚点链接 -->
+        <a href=""></a>
+            空链接使用“#”
+            本页面跳转使用“#+id”
+    <!-- 8，特殊字符 -->
+        很多，到时候百度一下，eg.空格=>&nbsp;
+    <!-- 9,表格及其相关标签的使用 -->
+        <table></table>
+        <tr></tr>定义行
+        <td></td>定义列
+        <th></th>表头标签，加粗，居中
+        <thead></thead> 表头标签 无语义，表划分
+        <tbody></tbody> 表体标签 无语义，表划分
+
+        <table>
+            <tr>
+                <td></td>
+            </tr>
+        </table>
+            <!-- 常用属性 -->
+                align 对齐方式 left right center
+                border 边框的宽度
+                cellpadding 单元格边缘与其中内容的距离
+                cellspacing 单元格之间的空隙距离
+                width 表格的宽度
+        <!-- 合并单元格 -->
+            colspen 横向
+            rowspan 纵向
+            选择目标单元格，输入合并的数量，删除被合并单元格
+    <!-- 10，列表标签 -->
+        <!-- 无序列表 -->
+            <ul></ul> 总体划分 不包括内容 内部不能嵌套其他标签除<li></li>以外
+            <li></li> 具体的每一项
+        <!-- 有序标签 -->
+            <ol></ol>
+            <li></li>
+        <!-- 自定义列表 -->
+            <dl>结构标签
+                <dt></dt>表头总领内容
+                <dd></dd>和表头有关的列表内容
+                <dd></dd>
+            </dl>
+    <!--11， 表单标签 -->
+            <!-- 表单域 -->
+                <form action=""></form>
+            
+            <!-- 表单元素 -->
+                <input type="text">
+                    value 表示在文本框里预留的值
+                    checked 当页面打开的时候，默认被选中
+                    maxlength 规定输入字段的最大长度
+                    type属性值举例:
+                        button 点击按钮
+                        checkbox 复选框 多选多
+                        radio 定义单选按钮 多选一
+                            <!-- radio属性 -->
+                                name 同name的可以实现多选一功能
+                        file 定义输入字段和浏览按钮，供文件上传
+                            提供接口，选择文件上传
+                        hidden 定义隐藏的输入字段
+                        image 定义图像形式的提交按钮
+                        password 定义密码字段，其中内容会被掩码
+                        reset 定义重置按钮
+                        submit 定义提交按钮，其中内容会被提交服务器
+                        test 定义单行的输入字段，默认长度为20个字符
+                <!-- label标签 -->
+                    <label for=""></label>
+                    不属于表单元素，但经常搭配使用
+                    使用id进行绑定
+                <!-- select标签 -->
+                    <select name="" id=""></select>
+                    <option value=""></option>
+                <!-- textarea文本域 -->
+                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                
+
+
+
 </body>
 </html>
